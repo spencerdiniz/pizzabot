@@ -77,7 +77,7 @@ struct Pizzabot: ParsableCommand {
                 return .success(DeliveryInstruction(grid: grid, addresses: addresses))
             }
             else {
-                let error = PizzabotError(localizedDescription: "Invalid input. Enable to parse grid. \(dimensions)")
+                let error = PizzabotError(localizedDescription: "Invalid input. Enable to parse grid. (\(gridComponent))")
                 return .failure(error)
             }
         }
